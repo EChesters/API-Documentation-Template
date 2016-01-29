@@ -2,4 +2,18 @@
 	background-color: $brand-color;
 	height: 100vh;
 	overflow: scroll;
+
+	ul, ol {
+		color: #fff;
+		list-style: none;
+		margin-left: 0;
+
+		li {
+			margin: 5px 0;
+		}
+
+		li ul, li ol {
+			margin: 0 0 15px 30px;
+		}
+	}
 }
