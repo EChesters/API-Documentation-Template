@@ -3,8 +3,12 @@
 This is an example of how documentation for an API can be presented. This has been researched with UX at its core, with personas and empathy maps attached.
 
 ## Installation
+Tech stack is Jekyll
 
-This project does not need installing, as it's a simple HTML website. To open the page, open the index.html in your browser.
+`$ gem install jekyll
+$ jekyll serve`
+
+Jekyll should now be serving your website locally at localhost:4000/
 
 ## Contributing
 
