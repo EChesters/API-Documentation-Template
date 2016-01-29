@@ -2,33 +2,37 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
-
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300|Cutive+Mono);
 
 
 // Our variables
-$base-font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+$base-font-family:      "Source Sans Pro", Helvetica, Arial, sans-serif;
+$code-font:             "Cutive Mono",;
+$base-font-size:        16px;
+$base-font-weight:      400;
+$base-header-weight:    700;
+$base-light-weight:     300;
+$small-font-size:       $base-font-size * 0.875;
+$base-line-height:      1.5;
 
-$spacing-unit:     30px;
+$spacing-unit:          30px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #0e80c4;
-$brand-secondary:  #fff;
+$text-color:            #111;
+$background-color:      #fdfdfd;
+$brand-color:           #0e80c4;
+$brand-secondary:       #fff;
 
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-color:            #828282;
+$grey-color-light:      lighten($grey-color, 40%);
+$grey-color-dark:       darken($grey-color, 25%);
+$grey-color-darker:     darken($grey-color, 40%);
 
 // Width of the content area
-$content-width:    800px;
+$content-width:         800px;
 
-$on-palm:          600px;
-$on-laptop:        800px;
+$on-palm:               600px;
+$on-laptop:             800px;
 
 
 
@@ -53,7 +57,5 @@ $on-laptop:        800px;
         "layout",
         "syntax-highlighting",
         "section",
-        "categories",
-        "api",
-        "code"
+        "categories"
 ;

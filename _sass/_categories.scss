@@ -7,6 +7,7 @@
 		color: #fff;
 		list-style: none;
 		margin-left: 0;
+		font-weight: $base-light-weight;
 
 		li {
 			margin: 5px 0;
@@ -15,5 +16,15 @@
 		li ul, li ol {
 			margin: 0 0 15px 30px;
 		}
+	}
+
+	a {
+		color: #fff;
+
+		&:hover {
+			text-decoration: none;
+			color: darken($brand-color, 25%);
+		}
+
 	}
 }

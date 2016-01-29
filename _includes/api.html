@@ -1,8 +1,74 @@
-<h2>API Documentation</h2>
-<div id="intro">
-  <div id="what">
-    <h3>What do this API do?</h3>
-    <p>Proin fermentum porttitor ipsum, in porttitor magna luctus nec. Etiam hendrerit id enim et auctor. Suspendisse dui velit, luctus eget dolor eget, euismod ullamcorper quam. Ut tincidunt bibendum felis, eu pellentesque tortor sodales sed. Nulla eu arcu sit amet sapien mattis egestas. Nam imperdiet elit lorem, in dapibus quam finibus at. Proin vitae dui augue. Sed dignissim in magna non ultrices.</p>
+<div id="intro" class="group-section">
+    <div class="api col-xs-12 col-sm-6">
+      <h2>API Documentation</h2>
+      <div id="what">
+        <h3>What does this API do?</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in consequat orci, non dictum ex. Aenean magna tellus, facilisis a mollis quis, efficitur vel leo. Fusce non pellentesque lacus, gravida gravida leo. Sed pretium varius erat, vitae pellentesque neque viverra ac. Quisque quis mi augue. Suspendisse rutrum lacus pharetra, facilisis nulla a, tincidunt orci. Nulla hendrerit justo posuere erat rutrum auctor. Praesent feugiat auctor eros vitae porttitor. Fusce ipsum lacus, pretium a sodales volutpat, placerat id sapien.</p>
+      </div>
+
+      <div id="who">
+        <h3>Who is this API for?</h3>
+        <p>Proin fermentum porttitor ipsum, in porttitor magna luctus nec. Etiam hendrerit id enim et auctor. Suspendisse dui velit, luctus eget dolor eget, euismod ullamcorper quam. Ut tincidunt bibendum felis, eu pellentesque tortor sodales sed.</p>
+      </div>
+    </div>
+    <div class="code col-xs-12 col-sm-6">
+      <h2>Code Examples</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p>API Endpoint:</p>
+      <code>https://api.stripe.com</code>
+    </div>
+</div>
+<div id="topics" class="group-section">
+  <div class="api col-xs-12 col-sm-6">
+    <h2>Topics</h2>
+    <h3 id="topic-1">Subtopic-1</h3>
+    <p>Proin fermentum porttitor ipsum, in porttitor magna luctus nec. Etiam hendrerit id enim et auctor. Suspendisse dui velit.</p>
+    <h3 id="topic-2">Subtopic-2</h3>
+    <p>Proin fermentum porttitor ipsum, in porttitor magna luctus nec. Etiam hendrerit id enim et auctor. Suspendisse dui velit. Proin fermentum porttitor ipsum, in porttitor magna luctus nec.</p>
   </div>
+  <div class="code col-xs-12 col-sm-6">
+    <p>In order to do subtopic-1 your request needs to look like this:</p>
+    <pre><code>{
+  "event": "accepted",
+  "timestamp": 1377211256.096436,
+  "tags": [],
+  "envelope": {
+    "sender": "sender@example.com"
+  },
+  "campaigns": [],
+  "user-variables": {},
+  "flags": {
+    "is-authenticated": false,
+    "is-test-mode": false
+  },
+  "routes": [
+    {
+      "priority": 1,
+      "expression": "match_recipient(\".*@samples.mailgun.org\")",
+      "description": "Sample route",
+      "actions": [
+        "stop()",
+        "forward(\"http://host.com/messages\")"
+      ]
+    }
+  ],
+  "recipient": "recipient@example.com",
+  "method": "smtp"
+}
+    </code></pre></sender@example.com>
+  </div>
+</div>
   
+
+  <!-- <div id="topics">
+    <h3>Topics</h3>
+    <p>Proin fermentum porttitor ipsum, in porttitor magna luctus nec.</p>
+
+    <h4 id="topic-1">Sub-Topic 1</h4>
+    <p>Proin fermentum porttitor ipsum, in porttitor magna luctus nec. Etiam hendrerit id enim et auctor. Suspendisse dui velit, luctus eget dolor eget, euismod ullamcorper quam.</p>
+
+    <h4 id="topic-2">Sub-Topic 2</h4>
+    <p>Proin fermentum porttitor ipsum, in porttitor magna luctus nec. Etiam hendrerit id enim et auctor. Suspendisse dui velit, luctus eget dolor eget, euismod ullamcorper quam.</p>
+  </div> -->
+
 </div>

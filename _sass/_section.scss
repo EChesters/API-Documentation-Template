@@ -3,6 +3,39 @@
 	overflow: scroll;
 }
 
+.group-section {
+	font-size: 1.2em;
+	line-height: 1.5em;
+}
+
 h2 {
 	margin-top: 15px;
+	font-weight: $base-header-weight;
+}
+
+h2, h3, h4, h5 {
+	font-weight: $base-header-weight;
+}
+
+.api, .code {
+	min-height: 500px;
+	// min-height: 50vh;
+	// display: block;
+}
+
+.code {
+	float: right;
+	background-color: $grey-color-darker;
+	color: $grey-color-light;
+	display: inline-block;
+
+	pre, code {
+		font-family: $code-font;
+		background-color: $grey-color-dark;
+		border-color: $grey-color;
+		color: $grey-color-light;
+		padding: 15px 10px;
+		width: 100%;
+		display: block;
+	}
 }
