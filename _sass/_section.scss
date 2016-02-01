@@ -4,13 +4,11 @@
 }
 
 .group-section {
-	font-size: 1.2em;
-	line-height: 1.5em;
+	font-size: 1.1em;
 }
 
 h2 {
 	margin-top: 15px;
-	font-weight: $base-header-weight;
 }
 
 h2, h3, h4, h5 {
@@ -18,9 +16,7 @@ h2, h3, h4, h5 {
 }
 
 .api, .code {
-	min-height: 500px;
-	// min-height: 50vh;
-	// display: block;
+	min-height: 530px;
 }
 
 .code {

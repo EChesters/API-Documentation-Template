@@ -1,10 +1,10 @@
 #categories {
 	background-color: $brand-color;
 	height: 100vh;
+	color: #fff;
 	overflow: scroll;
 
 	ul, ol {
-		color: #fff;
 		list-style: none;
 		margin-left: 0;
 		font-weight: $base-light-weight;
@@ -25,6 +25,9 @@
 			text-decoration: none;
 			color: darken($brand-color, 25%);
 		}
+	}
 
+	h2 {
+		color: #fff;
 	}
 }
