@@ -43,28 +43,31 @@ h2, h3, h4, h5 {
 		float: right;
 		background-color: #000;
 
-		ul li {
-			margin: 10px 0;
-			display: inline-block;
+		ul {
+			margin-bottom: 0;
+			
+			li {
+				margin: 10px 0;
+				display: inline-block;
 
-			a {
-				color: $grey-color-light;
-				padding: 5px 10px;
+				a {
+					color: $grey-color-light;
+					padding: 5px 10px;
 
-				&:hover {
-					color: #fff;
-					text-decoration: none;
-					background-color: $brand-color;
-					border-radius: 100px;
-				}
+					&:hover {
+						color: #fff;
+						text-decoration: none;
+						background-color: $brand-color;
+						border-radius: 100px;
+					}
 
-				&:active {
-					-webkit-box-shadow: inset 3px 3px 15px 1px rgba(0,0,0,0.52);
-					-moz-box-shadow: inset 3px 3px 15px 1px rgba(0,0,0,0.52);
-					box-shadow: inset 3px 3px 15px 1px rgba(0,0,0,0.52);
+					&:active {
+						-webkit-box-shadow: inset 3px 3px 15px 1px rgba(0,0,0,0.52);
+						-moz-box-shadow: inset 3px 3px 15px 1px rgba(0,0,0,0.52);
+						box-shadow: inset 3px 3px 15px 1px rgba(0,0,0,0.52);
+					}
 				}
 			}
-
 		}
 	}
 }
