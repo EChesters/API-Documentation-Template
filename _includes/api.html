@@ -1,4 +1,13 @@
-<div id="intro" class="group-section">
+<div id="intro">
+  <div class="languages">
+    <ul>
+      <li><a href="#">Java</a></li>
+      <li><a href="#">Python</a></li>
+<!--       <li><a href="#">C#</a></li>
+      <li><a href="#">Ruby</a></li> -->
+    </ul>
+  </div>
+  <div class="group-section">
     <div class="api col-xs-12 col-sm-6">
       <h2>API Documentation</h2>
       <div id="what">
@@ -12,7 +21,6 @@
       </div>
     </div>
     <div class="code col-xs-12 col-sm-6">
-      <h2>Code Examples</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       <p>API Endpoint:</p>
       <code>https://api.echesters.com</code>
@@ -25,39 +33,42 @@
     <p>Proin fermentum porttitor ipsum, in porttitor magna luctus nec. Etiam hendrerit id enim et auctor. Suspendisse dui velit.</p>
     <h3 id="topic-2">Subtopic-2</h3>
     <p>Proin fermentum porttitor ipsum, in porttitor magna luctus nec. Etiam hendrerit id enim et auctor. Suspendisse dui velit. Proin fermentum porttitor ipsum, in porttitor magna luctus nec.</p>
+    <h3 id="topic-3">Subtopic-3</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consectetur leo neque, vitae mattis urna consectetur ac. Nunc consectetur convallis justo eget commodo. Etiam nec egestas dolor. Maecenas faucibus mattis sem. Vivamus dapibus metus felis, nec mollis est pulvinar in. Donec libero magna, dictum ac eros porta, commodo rhoncus nibh. Nulla facilisi. Aliquam erat volutpat. Sed dapibus eros et diam ornare lacinia ac id enim. Donec pellentesque efficitur erat laoreet maximus. Vivamus sed mi at libero hendrerit laoreet. Morbi turpis dui, ultricies a sagittis at, porta vel est. Vestibulum cursus justo at neque blandit, tincidunt lacinia odio sodales. Donec id nunc vitae dolor fringilla egestas vitae et tortor. Cras suscipit diam sed mi auctor, et lobortis nunc congue.</p>
+    <h3 id="topic-4">Subtopic-4</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
   </div>
   <div class="code col-xs-12 col-sm-6 position right">
     <p>In order to do subtopic-1 your request needs to look like this:</p>
     <pre><code>{
-  "event": "accepted",
-  "timestamp": 1377211256.096436,
-  "tags": [],
-  "envelope": {
-    "sender": "sender@example.com"
-  },
-  "campaigns": [],
-  "user-variables": {},
-  "flags": {
-    "is-authenticated": false,
-    "is-test-mode": false
-  },
-  "routes": [
-    {
-      "priority": 1,
-      "expression": "match_recipient(\".*@samples.mailgun.org\")",
-      "description": "Sample route",
-      "actions": [
-        "stop()",
-        "forward(\"http://host.com/messages\")"
-      ]
-    }
-  ],
-  "recipient": "recipient@example.com",
-  "method": "smtp"
-}
-    </code></pre>
+        "event": "accepted",
+        "timestamp": 1377211256.096436,
+        "tags": [],
+        "envelope": {
+          "sender": "sender@example.com"
+        },
+        "campaigns": [],
+        "user-variables": {},
+        "flags": {
+          "is-authenticated": false,
+          "is-test-mode": false
+        },
+        "routes": [
+          {
+            "priority": 1,
+            "expression": "match_recipient(\".*@samples.mailgun.org\")",
+            "description": "Sample route",
+            "actions": [
+              "stop()",
+              "forward(\"http://host.com/messages\")"
+            ]
+          }
+        ],
+        "recipient": "recipient@example.com",
+        "method": "smtp"
+      }
+        </code></pre>
+      </div>
+    </div>
   </div>
-</div>
-  
-
 </div>
