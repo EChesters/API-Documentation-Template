@@ -1,0 +1,23 @@
+table {
+	width: 90%;
+	margin: 0 auto;
+
+	th {
+		font-weight: $base-light-weight;
+		text-transform: uppercase;
+	}
+
+	td {
+		padding: 15px 10px;
+		border-bottom: $grey-color-light 1px solid;
+		vertical-align: top;
+
+		&.middle {
+			vertical-align: middle;
+		}
+	}
+
+	td:first-child {
+		text-align: right;
+	}
+}

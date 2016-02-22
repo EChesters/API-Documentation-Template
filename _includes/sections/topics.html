@@ -1,0 +1,40 @@
+<div id="topics" class="group-section">
+  <div class="api col-xs-12 col-sm-6">
+    <h2>Topics</h2>
+    <h3 id="topic-1">Subtopic-1</h3>
+    <p>Proin fermentum porttitor ipsum, in porttitor magna luctus nec. Etiam hendrerit id enim et auctor. Suspendisse dui velit.</p>
+    <h3 id="topic-2">Subtopic-2</h3>
+    <p>Proin fermentum porttitor ipsum, in porttitor magna luctus nec. Etiam hendrerit id enim et auctor. Suspendisse dui velit. Proin fermentum porttitor ipsum, in porttitor magna luctus nec.</p>
+  </div>
+  <div class="code col-xs-12 col-sm-6">
+    <p>In order to do subtopic-1 your request needs to look like this:</p>
+    <pre><code>{
+  "event": "accepted",
+  "timestamp": 1377211256.096436,
+  "tags": [],
+  "envelope": {
+    "sender": "sender@example.com"
+  },
+  "campaigns": [],
+  "user-variables": {},
+  "flags": {
+    "is-authenticated": false,
+    "is-test-mode": false
+  },
+  "routes": [
+    {
+      "priority": 1,
+      "expression": "match_recipient(\".*@samples.mailgun.org\")",
+      "description": "Sample route",
+      "actions": [
+        "stop()",
+        "forward(\"http://host.com/messages\")"
+      ]
+    }
+  ],
+  "recipient": "recipient@example.com",
+  "method": "smtp"
+}
+    </code></pre></sender@example.com>
+  </div>
+</div>

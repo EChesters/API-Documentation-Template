@@ -1,0 +1,51 @@
+span {
+  &.emphasise {
+    font-weight: $base-header-weight;
+    color: $brand-color;
+  }
+
+  &.warning {
+    @extend .emphasise;
+    color: #ff9a00;
+  }
+
+  &.inline-code {
+    font-family: $code-font, monospace;
+    color: $grey-color-light;
+    background-color: $grey-color-dark;
+    border-radius: 5px;
+    padding: 2px 5px;
+  }
+}
+
+pre, code {
+  font-family: $code-font, monospace;
+  background-color: $grey-color-dark;
+  color: $grey-color-light;
+  padding: 15px 10px;
+  width: 100%;
+  display: block;
+  margin: 10px 0;
+  border: none;
+  line-height: 1.1em;
+  white-space: pre-line;
+  word-break: normal;
+  font-size: 14px;
+}
+
+.api span.inline-code,
+.api pre {
+  background-color: $grey-color-light;
+  color: $grey-color-dark;
+}
+
+h2, h3, h4, h5 {
+  margin-top: 15px;
+  font-weight: $base-font-weight;
+  color: $brand-color;
+}
+
+h3 {
+  padding-top: 15px;
+  font-weight: $base-light-weight;
+}

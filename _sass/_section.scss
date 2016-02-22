@@ -1,41 +1,73 @@
 .section {
-	height: 100vh;
-	overflow: scroll;
+  height: 100vh;
+  overflow: scroll;
 }
 
 .group-section {
-	font-size: 1.2em;
-	line-height: 1.5em;
-}
-
-h2 {
-	margin-top: 15px;
-	font-weight: $base-header-weight;
-}
-
-h2, h3, h4, h5 {
-	font-weight: $base-header-weight;
+  font-size: $base-font-size;
+  height: 100%;
+  display: flex;
 }
 
 .api, .code {
-	min-height: 500px;
-	// min-height: 50vh;
-	// display: block;
+  &.border {
+    border-top: rgba(200, 200, 200, .2) 1px solid;
+  }
 }
 
 .code {
-	float: right;
-	background-color: $grey-color-darker;
-	color: $grey-color-light;
-	display: inline-block;
+  background-color: $grey-color-darker;
+  color: $grey-color-light;
+  display: inline-block;
+  padding-bottom: 15px;
 
-	pre, code {
-		font-family: $code-font;
-		background-color: $grey-color-dark;
-		border-color: $grey-color;
-		color: $grey-color-light;
-		padding: 15px 10px;
-		width: 100%;
-		display: block;
-	}
+  &.no-header {
+    padding-top: 15px;
+  }
+
+  h2, h3 {
+    color: $grey-color-light;
+  }
+
+  a {
+    color: $brand-color;
+    &:hover {
+      color: lighten($brand-color, 20%);;
+    }
+  }
+}
+
+.languages {
+  width: 100%;
+  display: block;
+  float: right;
+  background-color: #000;
+  margin: 0;
+
+  ul {
+    margin-bottom: 0;
+    
+    li {
+      margin: 10px 0;
+      display: inline-block;
+
+      a {
+        color: $grey-color-light;
+        padding: 5px 10px;
+
+        &:hover {
+          color: #fff;
+          text-decoration: none;
+          background-color: $brand-color;
+          border-radius: 100px;
+        }
+
+        &:active {
+          -webkit-box-shadow: inset 3px 3px 15px 1px rgba(0,0,0,0.52);
+          -moz-box-shadow: inset 3px 3px 15px 1px rgba(0,0,0,0.52);
+          box-shadow: inset 3px 3px 15px 1px rgba(0,0,0,0.52);
+        }
+      }
+    }
+  }
 }
