@@ -241,23 +241,10 @@
     }
 }
 
-.position {
-    display: inline-block;
-
-    &.left {
-        float: left;
-    }
-
-    &.right {
-        float: right;
-    }
-}
-
 /**
  * Logo
  */
 .logo {
-    text-align: center;
-    height: 100px;
+    height: 50px;
     margin: 15px 0;
 }
